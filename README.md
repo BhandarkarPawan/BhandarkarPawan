@@ -1,6 +1,6 @@
 
 <p float="left">
-	<img alt="Header2" src="./assets/images/Header2.png" width="79%">
+	<img alt="Header" src="./assets/images/Header.png" width="79%">
 	<img alt="CMU" src="./assets/images/CMU.png" width="20%"/>
 </p>
 
