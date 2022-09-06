@@ -3,7 +3,6 @@
 ## Hi there 👋
 I'm a front-end developer currently pursuing a Master's Degree in Software Engineering at Carnegie Mellon University! I build applications for the Web with a keen focus on accessibility - This includes semantic HTML5, WAI-ARIA, CSS3, React, Typescript and Database Technologies.
 
----
 ## Tech Stack
 <code><img height="30" alt="Javascript" src="./assets/logos/Javascript.png"></code>&nbsp;&nbsp;&nbsp;
 <code><img height="30" alt="Typescript" src="./assets/logos/Typescript.png"></code>&nbsp;&nbsp;&nbsp;
