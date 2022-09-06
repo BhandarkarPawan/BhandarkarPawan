@@ -1,4 +1,8 @@
-<img alt="Header" src="./assets/images/Header.png">
+
+<p float="left">
+	<img alt="Header" src="./assets/images/Header.png" width="79%">
+	<img alt="Carnegie Mellon University" src="./assets/images/CMU.png" width="20%"/>
+</p>
 
 ## Hi there 👋
 I'm a front-end developer currently pursuing a Master's Degree in Software Engineering at Carnegie Mellon University! I build applications for the Web with a keen focus on accessibility - This includes semantic HTML5, WAI-ARIA, CSS3, React, Typescript and Database Technologies.
