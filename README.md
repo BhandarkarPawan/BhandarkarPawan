@@ -13,7 +13,7 @@ I'm a front-end developer currently pursuing a Master's Degree in Software Engin
 <code><img height="30" alt="React" src="./assets/logos/React.webp"></code>&nbsp;&nbsp;&nbsp;
 <code><img height="30" alt="Styled Components" src="./assets/logos/StyledComponents.png"></code>
 
----
+
 ##  Github Stats
 <img src="https://github-readme-stats.vercel.app/api?username=BhandarkarPawan&show_icons=true&theme=github_dark" alt="github stats" width="45%" align="left"/>
 
