@@ -1,7 +1,7 @@
 
 <p float="left">
-	<img alt="Header" src="./assets/images/Header.png" width="79%">
-	<img alt="Carnegie Mellon University" src="./assets/images/CMU.png" width="20%"/>
+	<img alt="Header2" src="./assets/images/Header.png" width="79%">
+	<img alt="CMU" src="./assets/images/CMU.png" width="20%"/>
 </p>
 
 ## Hi there 👋
@@ -9,7 +9,7 @@ I'm a front-end developer currently pursuing a Master's Degree in Software Engin
  
 ## Tech Stack
 <p>
-	<img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+	<img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> 
 	<img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
 	<img alt="Javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 	<img alt="Styled Components" src="https://img.shields.io/badge/-Styled_Components-db7092?style=for-the-badge&logo=styled-components&logoColor=white" />
