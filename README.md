@@ -1,7 +1,8 @@
-### Hi there 👋
 <img alt="CSS3" src="./assets/images/CMUHeader.png">
 
+# Hi there 👋
 I'm a front-end web developer currently pursuing a Master's Degree in Software Engineering at Carnegie Mellon University! 
+
 
 <code><img height="30" alt="Javascript" src="./assets/logos/Javascript.png"></code>&nbsp;&nbsp;&nbsp;
 <code><img height="30" alt="Typescript" src="./assets/logos/Typescript.png"></code>&nbsp;&nbsp;&nbsp;
