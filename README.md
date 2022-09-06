@@ -1,4 +1,3 @@
-<img alt="CSS3" src="./assets/images/CMUHeader.png">
 <img alt="Header" src="./assets/images/Header.png">
 
 # Hi there 👋
