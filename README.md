@@ -7,6 +7,11 @@
 ## Hi there 👋
 I'm a front-end developer currently pursuing a Master's Degree in Software Engineering at Carnegie Mellon University! I build applications for the Web with a keen focus on accessibility - This includes semantic HTML5, WAI-ARIA, CSS3, React, Typescript and Database Technologies.
  
+<a href="https://bhandarkar.me">
+	<img height="100%" alt="Portfolio" src="https://img.shields.io/badge/portfolio-white?style=for-the-badge&logo=About.me&logoColor=black"/>
+</a>
+
+
 ## Tech Stack
 <p>
 	<img alt="Javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
@@ -33,3 +38,17 @@ I'm a front-end developer currently pursuing a Master's Degree in Software Engin
 
 | <img src="https://github-readme-stats.vercel.app/api?username=BhandarkarPawan&show_icons=true&theme=react" alt="github stats" /> | <img src="https://github-readme-streak-stats.herokuapp.com/?user=BhandarkarPawan&theme=react" />
 | --- | --- | 
+
+## Get In Touch
+<p>
+	<a href="https://www.linkedin.com/in/bhandarkar">
+		<img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+	</a>
+	<a href="https://twitter.com/bhandarkarpawan">
+		<img alt="Twitter" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+	</a>
+	<a href="mailto:pawan@bhandarkar.me">
+		<img alt="Email" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+	</a>
+</p>
+
