@@ -1,4 +1,6 @@
 ### Hi there 👋
+<img alt="CSS3" src="./assets/images/CMUHeader.png">
+
 I'm a front-end web developer currently pursuing a Master's Degree in Software Engineering at Carnegie Mellon University! 
 
 <code><img height="30" alt="Javascript" src="./assets/logos/Javascript.png"></code>&nbsp;&nbsp;&nbsp;
