@@ -1,4 +1,5 @@
 <img alt="CSS3" src="./assets/images/CMUHeader.png">
+<img alt="Header" src="./assets/images/Header.png">
 
 # Hi there 👋
 I'm a front-end web developer currently pursuing a Master's Degree in Software Engineering at Carnegie Mellon University! 
