@@ -27,6 +27,5 @@ I'm a front-end developer currently pursuing a Master's Degree in Software Engin
 	<img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
 </p>
 
----
 | <img src="https://github-readme-stats.vercel.app/api?username=BhandarkarPawan&show_icons=true&theme=react" alt="github stats" /> | <img src="https://github-readme-streak-stats.herokuapp.com/?user=BhandarkarPawan&theme=react" />
 | --- | --- | 
