@@ -20,6 +20,7 @@ I'm a front-end developer currently pursuing a Master's Degree in Software Engin
 	<img alt="Styled Components" src="https://img.shields.io/badge/-Styled_Components-db7092?style=for-the-badge&logo=styled-components&logoColor=white" />
 	<img alt="Tailwind" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 	<img alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=for-the-badge&logo=Node.js&logoColor=white" />
+	<img alt="NextJS" src="https://img.shields.io/badge/nextjs-000000?style=for-the-badge&logo=next.js&logoColor=whitee" />
 	<img alt="MongoDB" src="https://img.shields.io/badge/-MongoDB-13aa52?style=for-the-badge&logo=mongodb&logoColor=white" />
 	<img alt="Python" src="https://img.shields.io/badge/-python-3776AB?style=for-the-badge&logo=Python&logoColor=white" />
 	<img alt="Flask" src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
