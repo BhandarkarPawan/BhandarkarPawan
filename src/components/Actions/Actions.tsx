@@ -1,6 +1,4 @@
-import { useContext } from 'react';
 import styled from 'styled-components';
-import { AppContext } from '../../App';
 import DownloadLink from '../DownloadLink';
 import SocialLinks from '../SocialLinks';
 
@@ -13,7 +11,7 @@ export interface IProps {
 }
 
 const Actions: React.FC<IProps> = (props) => {
-  const fixed = useContext(AppContext);
+  // const fixed = useContext(AppContext);
 
   return (
     <Wrapper {...props.delegated}>
