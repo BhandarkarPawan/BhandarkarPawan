@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Javascript",
+    "url": "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+  },
+  {
+    "name": "React",
+    "url": "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+  },
+  {
+    "name": "TypeScript",
+    "url": "https://img.shields.io/badge/-TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+  },
+  {
+    "name": "Styled Components",
+    "url": "https://img.shields.io/badge/-Styled_Components-db7092?style=for-the-badge&logo=styled-components&logoColor=white"
+  },
+  {
+    "name": "Tailwind",
+    "url": "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+  },
+  {
+    "name": "Nodejs",
+    "url": "https://img.shields.io/badge/-Nodejs-43853d?style=for-the-badge&logo=Node.js&logoColor=white"
+  },
+  {
+    "name": "NextJS",
+    "url": "https://img.shields.io/badge/nextjs-000000?style=for-the-badge&logo=next.js&logoColor=whitee"
+  },
+  {
+    "name": "MongoDB",
+    "url": "https://img.shields.io/badge/-MongoDB-13aa52?style=for-the-badge&logo=mongodb&logoColor=white"
+  },
+  {
+    "name": "Python",
+    "url": "https://img.shields.io/badge/-python-3776AB?style=for-the-badge&logo=Python&logoColor=white"
+  },
+  {
+    "name": "Flask",
+    "url": "https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"
+  },
+  {
+    "name": "Netlify",
+    "url": "https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
+  },
+  {
+    "name": "html5",
+    "url": "https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+  },
+  {
+    "name": "Sass",
+    "url": "https://img.shields.io/badge/-Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
+  },
+  {
+    "name": "npm",
+    "url": "https://img.shields.io/badge/-NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white"
+  },
+  {
+    "name": "Heroku",
+    "url": "https://img.shields.io/badge/-Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"
+  },
+  {
+    "name": "GraphQL",
+    "url": "https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white"
+  },
+  {
+    "name": "git",
+    "url": "https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white"
+  },
+  {
+    "name": "Prettier",
+    "url": "https://img.shields.io/badge/-Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=white"
+  },
+  {
+    "name": "CSS3",
+    "url": "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+  },
+  {
+    "name": "Postgres",
+    "url": "https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
+  },
+  {
+    "name": "Java",
+    "url": "https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"
+  }
+]
