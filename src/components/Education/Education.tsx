@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
 import { AppContext } from '../../App';
+import { QUERY } from '../../constants';
 export interface ICollege {
   name: String;
   degree: String;
@@ -49,6 +50,11 @@ const CollegeLogo = styled.img`
     height: 130px;
     width: 130px; 
     flex-shrink: 0; 
+
+    @media ${QUERY.phoneAndDown}{
+        height: 110px;
+        width: 110px; 
+      }
   `}
 `;
 
@@ -61,6 +67,10 @@ const About = styled.figcaption`
     display: flex;
     flex-direction: column;
     // gap: 8px;
+
+    @media ${QUERY.phoneAndDown}{
+      font-size: calc(1rem * 18/18);
+      }
   `}
 `;
 

@@ -63,7 +63,6 @@ const MainFooter = styled.div`
   ${(props: IStyledProps) =>
     props.fixed &&
     `
-    padding: 50px 0px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -71,13 +70,13 @@ const MainFooter = styled.div`
     max-width: var(--max-width);
     width: min(100%, var(--max-width));
     margin: auto;
-    padding: var(--global-h-pad);
+    padding: 50px var(--global-h-pad);
 
 
     @media ${QUERY.phoneAndDown}{
-      gap: 16px;
+        padding-top: 25px;
+        padding-bottom: 25px;
       }
-
   `}
 `;
 
@@ -135,8 +134,12 @@ const Attribution = styled.div`
       background-color: var(--color-primary-dark);
       font-size: calc(1rem * 16/18);
       padding: 24px 0px;
-
       font-weight: 500;
+
+      @media ${QUERY.phoneAndDown}{
+        padding: 8px 0px;
+
+      }
 `}
 `;
 const Creator = styled.div`

@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
 import { AppContext } from '../../App';
+import { QUERY } from '../../constants';
 export interface IStyledProps {
   fixed?: boolean;
 }
@@ -22,6 +23,10 @@ const Wrapper = styled.img`
       height: 84px;
       width: 327px;
       transform: translate(-13px, -1px);
+
+      @media ${QUERY.phoneAndDown}{
+        margin-bottom: 30px;
+    }
   `}
 `;
 

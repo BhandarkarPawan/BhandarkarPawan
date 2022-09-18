@@ -19,7 +19,7 @@ const Header: React.FC<IProps> = (props) => {
   return (
     <Wrapper fixed={fixed} {...props.delegated}>
       <Logo />
-      <Navbar />
+      <Navbar variant="center" />
     </Wrapper>
   );
 };

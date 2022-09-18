@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
 import { AppContext } from '../../App';
+import { QUERY } from '../../constants';
 import Actions from '../Actions';
 
 export interface IStyledProps {
@@ -45,6 +46,11 @@ const Greeting = styled.h1`
     `
       font-size: calc(1rem * 48/18);
       margin-bottom: 24px;
+
+
+    @media ${QUERY.phoneAndDown}{
+      font-size: calc(1rem * 36/18);
+      }
   `}
 `;
 
@@ -58,7 +64,13 @@ const About = styled.h2`
     
     & strong{
       color: var(--color-primary);
+      margin: auto;
     }
+
+    @media ${QUERY.phoneAndDown}{
+      font-size: calc(1rem * 24/18);
+      line-height: calc(1rem * 32/18);
+      }
   `}
 `;
 

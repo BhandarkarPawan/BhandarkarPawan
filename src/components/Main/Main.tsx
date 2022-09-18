@@ -62,7 +62,6 @@ const Wrapper = styled.main`
 
       padding-top: 30px;
       padding-bottom: 30px;
-      gap: 32px;
 
     }
 

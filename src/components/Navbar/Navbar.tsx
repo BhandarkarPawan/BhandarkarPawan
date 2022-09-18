@@ -10,17 +10,17 @@ export interface IStyledProps {
 export interface IProps {
   children?: React.ReactNode;
   delegated?: any;
+  variant?: String;
 }
 
 const Navbar: React.FC<IProps> = (props) => {
   const fixed = useContext(AppContext);
-
   return (
     <Wrapper fixed={fixed} {...props.delegated}>
-      <NavLink>About</NavLink>
-      <NavLink>Designs</NavLink>
-      <NavLink>Projects</NavLink>
-      <NavLink>Contact</NavLink>
+      <NavLink variant={props.variant}>About</NavLink>
+      <NavLink variant={props.variant}>Designs</NavLink>
+      <NavLink variant={props.variant}>Projects</NavLink>
+      <NavLink variant={props.variant}>Contact</NavLink>
     </Wrapper>
   );
 };
@@ -35,7 +35,6 @@ const Wrapper = styled.nav`
       width: 50%;
 
       @media ${QUERY.phoneAndDown}{
-        padding-top: 30px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 80%
