@@ -17,6 +17,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-weight: 900;
+
 }
 
 html{
@@ -29,6 +30,7 @@ html{
 	--card-width: 300px;
 	--card-gap: 16px;
 	--max-width: calc((var(--card-width) * 3) + (var(--card-gap) * 4));
+	--global-h-pad: 16px;
 }
 `;
 

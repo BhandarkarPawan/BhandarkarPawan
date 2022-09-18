@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
 import { AppContext } from '../../App';
+import { QUERY } from '../../constants';
 import NavLink from '../NavLink';
 
 export interface IStyledProps {
@@ -32,6 +33,13 @@ const Wrapper = styled.nav`
     `
       justify-content: space-between;
       width: 50%;
+
+      @media ${QUERY.phoneAndDown}{
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%
+    }
   `}
 `;
 

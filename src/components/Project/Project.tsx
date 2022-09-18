@@ -18,11 +18,12 @@ export interface IProps {
 
 const Project: React.FC<IProps> = (props) => {
   const fixed = useContext(AppContext);
+  const name = `${props.project.name}`;
 
   const imgSrc = `assets/${props.project.imgUrl}`;
   return (
     <Wrapper fixed={fixed} {...props.delegated}>
-      <Thumbnail fixed={fixed} src={imgSrc} />
+      <Thumbnail alt={name} fixed={fixed} src={imgSrc} />
     </Wrapper>
   );
 };

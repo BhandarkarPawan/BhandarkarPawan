@@ -20,8 +20,9 @@ const Wrapper = styled.img`
   ${(props: IStyledProps) =>
     props.fixed &&
     `
-      width: 40%;
+      width: 100%;
       border-radius: 8px;
+      grid-area: heroimage;
   `}
 `;
 

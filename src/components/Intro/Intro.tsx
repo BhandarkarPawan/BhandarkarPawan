@@ -31,8 +31,11 @@ const Wrapper = styled.div`
   ${(props: IStyledProps) =>
     props.fixed &&
     `
-    width: 50%;
-    margin-left: auto;
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
   `}
 `;
 

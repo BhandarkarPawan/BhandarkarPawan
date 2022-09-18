@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
 import { AppContext } from '../../App';
+import { QUERY } from '../../constants';
 import DesignGrid from '../DesignGrid';
 import Heading from '../Heading';
 
@@ -32,6 +33,10 @@ const Wrapper = styled.section`
     flex-direction: column;
     gap: 40px;
     grid-area: designs;
+
+    @media ${QUERY.phoneAndDown}{
+        gap: 20px;
+    }
   `}
 `;
 

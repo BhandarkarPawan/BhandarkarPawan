@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
 import { AppContext } from '../../App';
+import { QUERY } from '../../constants';
 import DownloadLink from '../DownloadLink';
 import Heading from '../Heading';
 import Navbar from '../Navbar';
@@ -70,6 +71,12 @@ const MainFooter = styled.div`
     max-width: var(--max-width);
     width: min(100%, var(--max-width));
     margin: auto;
+    padding: var(--global-h-pad);
+
+
+    @media ${QUERY.phoneAndDown}{
+      gap: 16px;
+      }
 
   `}
 `;
@@ -86,13 +93,17 @@ const Icon = styled.img`
 `;
 
 const Lead = styled.div`
-  display: flex;
-  justify-content: space-between;
   ${(props: IStyledProps) =>
     props.fixed &&
     `
-  
-    margin-bottom : 16px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+
+      @media ${QUERY.phoneAndDown}{
+        margin-bottom : 0px;
+        flex-direction: column;
+      }
   `}
 `;
 
@@ -107,6 +118,7 @@ const Email = styled.div`
     align-items: center;
     font-size: calc(1rem * 24/18);
     font-weight: 500;
+    
   `}
 `;
 
@@ -134,6 +146,7 @@ const Creator = styled.div`
     max-width: var(--max-width);
     width: min(100%, var(--max-width));
     margin: auto;
+    padding: var(--global-h-pad);
 `}
 `;
 

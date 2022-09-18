@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
 import { AppContext } from '../../App';
+import { QUERY } from '../../constants';
 import EducationList from '../EducationList';
 import Heading from '../Heading';
 
@@ -30,6 +31,10 @@ const Wrapper = styled.section`
       display: flex;
       flex-direction: column;
       gap: 40px;
+
+      @media ${QUERY.phoneAndDown}{
+        gap: 20px;
+    }
   `}
 `;
 

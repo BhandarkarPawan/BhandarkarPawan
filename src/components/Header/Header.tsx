@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
 import { AppContext } from '../../App';
+import { QUERY } from '../../constants';
 import Logo from '../Logo';
 import Navbar from '../Navbar';
 
@@ -29,12 +30,19 @@ const Wrapper = styled.header`
   ${(props: IStyledProps) =>
     props.fixed &&
     `
+    padding:var(--global-h-pad);
     padding-top: 60px;
     align-items: center;
 
     max-width: var(--max-width);
     width: min(100%, var(--max-width));
     margin: auto;
+
+    @media ${QUERY.phoneAndDown}{
+      padding-top: 30px;
+      flex-direction: column;
+      width: 100%;
+    }
   `}
 `;
 

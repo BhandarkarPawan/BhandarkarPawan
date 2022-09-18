@@ -1,9 +1,11 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
 import { AppContext } from '../../App';
+import { QUERY } from '../../constants';
 import DesignSection from '../DesignSection';
 import EducationSection from '../EducationSection';
-import Hero from '../Hero';
+import HeroImage from '../HeroImage';
+import Intro from '../Intro';
 import ProjectSection from '../ProjectSection';
 import SkillSection from '../SkillSection';
 
@@ -20,7 +22,8 @@ const Main: React.FC<IProps> = (props) => {
 
   return (
     <Wrapper fixed={fixed} {...props.delegated}>
-      <Hero />
+      <HeroImage />
+      <Intro />
       <EducationSection />
       <SkillSection />
       <DesignSection />
@@ -34,9 +37,9 @@ const Wrapper = styled.main`
     props.fixed &&
     `
     display: grid;
-    padding: 60px 0px;
+    padding: 60px var(--global-h-pad);
     grid-template-areas: 
-      "hero hero"
+      "heroimage intro"
       "education skills"
       "designs designs"
       "projects projects";
@@ -46,6 +49,23 @@ const Wrapper = styled.main`
     max-width: var(--max-width);
     width: min(100%, var(--max-width));
     margin: auto;
+
+
+    @media ${QUERY.phoneAndDown}{
+      grid-template-areas: 
+      "heroimage"
+      "intro"
+      "education"
+      "skills"
+      "designs"
+      "projects";
+
+      padding-top: 30px;
+      padding-bottom: 30px;
+      gap: 32px;
+
+    }
+
   `}
 `;
 

@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
 import { AppContext } from '../../App';
+import { QUERY } from '../../constants';
 export interface IStyledProps {
   fixed?: boolean;
 }
@@ -24,6 +25,12 @@ const Wrapper = styled.div`
     props.fixed &&
     `
     font-size: calc(1rem * 48/18);
+    line-height: calc(1rem * 56/18);
+
+      @media ${QUERY.phoneAndDown}{
+        font-size: calc(1rem * 36/18);
+        line-height: calc(1rem * 44/18);
+    }
   `}
 `;
 
