@@ -1,38 +1,32 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
 import { AppContext } from '../../App';
-import Heading from '../Heading';
-import ProjectGrid from '../ProjectGrid';
-
 export interface IStyledProps {
   fixed?: boolean;
 }
 export interface IProps {
+  children?: React.ReactNode;
   delegated?: any;
 }
 
-// TODO: Use a JSON
-
-const DesignSection: React.FC<IProps> = (props) => {
+const MaxWidth: React.FC<IProps> = (props) => {
   const fixed = useContext(AppContext);
 
   return (
     <Wrapper fixed={fixed} {...props.delegated}>
-      <Heading>Projects</Heading>
-      <ProjectGrid />
+      {props.children}
     </Wrapper>
   );
 };
 
-const Wrapper = styled.section`
+const Wrapper = styled.div`
   ${(props: IStyledProps) =>
     props.fixed &&
     `
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    grid-area: projects;
+      max-width: var(--max-width);
+      width: min(100%, var(--max-width));
+      margin: auto;
   `}
 `;
 
-export default DesignSection;
+export default MaxWidth;

@@ -1,14 +1,30 @@
+import { useContext } from 'react';
 import styled from 'styled-components';
-
+import { AppContext } from '../../App';
+export interface IStyledProps {
+  fixed?: boolean;
+}
 export interface IProps {
   children?: React.ReactNode;
   delegated?: any;
 }
 
 const Heading: React.FC<IProps> = (props) => {
-  return <Wrapper {...props.delegated}>{props.children}</Wrapper>;
+  const fixed = useContext(AppContext);
+
+  return (
+    <Wrapper fixed={fixed} {...props.delegated}>
+      {props.children}
+    </Wrapper>
+  );
 };
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  ${(props: IStyledProps) =>
+    props.fixed &&
+    `
+    font-size: calc(1rem * 48/18);
+  `}
+`;
 
 export default Heading;

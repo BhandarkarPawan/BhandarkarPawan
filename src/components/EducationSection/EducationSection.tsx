@@ -1,22 +1,36 @@
+import { useContext } from 'react';
 import styled from 'styled-components';
+import { AppContext } from '../../App';
 import EducationList from '../EducationList';
 import Heading from '../Heading';
-import Section from '../Section';
 
+export interface IStyledProps {
+  fixed?: boolean;
+}
 export interface IProps {
   children?: React.ReactNode;
   delegated?: any;
 }
 
 const EducationSection: React.FC<IProps> = (props) => {
+  const fixed = useContext(AppContext);
+
   return (
-    <Wrapper {...props.delegated}>
+    <Wrapper fixed={fixed} {...props.delegated}>
       <Heading>Education</Heading>
       <EducationList />
     </Wrapper>
   );
 };
 
-const Wrapper = styled(Section)``;
+const Wrapper = styled.section`
+  ${(props: IStyledProps) =>
+    props.fixed &&
+    `
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+  `}
+`;
 
 export default EducationSection;

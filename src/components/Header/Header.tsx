@@ -1,15 +1,22 @@
+import { useContext } from 'react';
 import styled from 'styled-components';
+import { AppContext } from '../../App';
 import Logo from '../Logo';
 import Navbar from '../Navbar';
 
+export interface IStyledProps {
+  fixed?: boolean;
+}
 export interface IProps {
   children?: React.ReactNode;
   delegated?: any;
 }
 
 const Header: React.FC<IProps> = (props) => {
+  const fixed = useContext(AppContext);
+
   return (
-    <Wrapper {...props.delegated}>
+    <Wrapper fixed={fixed} {...props.delegated}>
       <Logo />
       <Navbar />
     </Wrapper>
@@ -19,6 +26,16 @@ const Header: React.FC<IProps> = (props) => {
 const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
+  ${(props: IStyledProps) =>
+    props.fixed &&
+    `
+    padding-top: 60px;
+    align-items: center;
+
+    max-width: var(--max-width);
+    width: min(100%, var(--max-width));
+    margin: auto;
+  `}
 `;
 
 export default Header;

@@ -1,6 +1,11 @@
+import { useContext } from 'react';
 import styled from 'styled-components';
+import { AppContext } from '../../App';
 import Project, { IProject } from '../Project/Project';
 
+export interface IStyledProps {
+  fixed?: boolean;
+}
 export interface IProps {
   delegated?: any;
 }
@@ -45,8 +50,10 @@ const PROJECTS: IProject[] = [
 ];
 
 const ProjectGrid: React.FC<IProps> = (props) => {
+  const fixed = useContext(AppContext);
+
   return (
-    <Wrapper>
+    <Wrapper fixed={fixed}>
       {PROJECTS.map((project, i) => {
         return (
           <ListItem key={i}>
@@ -62,10 +69,19 @@ const Wrapper = styled.ul`
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  ${(props: IStyledProps) =>
+    props.fixed &&
+    `
+    display: grid;
+    grid-template-columns:
+      repeat(auto-fill, minmax(var(--card-width), 1fr));
+    gap: var(--card-gap);
+  `}
 `;
 
 const ListItem = styled.li`
   list-style: none;
+  ${(props: IStyledProps) => props.fixed && ``}
 `;
 
 export default ProjectGrid;
