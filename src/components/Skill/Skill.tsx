@@ -1,6 +1,4 @@
-import { useContext } from 'react';
 import styled from 'styled-components';
-import { AppContext } from '../../App';
 export interface ISkill {
   name: String;
   url: string;
@@ -15,7 +13,7 @@ export interface IProps {
 }
 
 const Skill: React.FC<IProps> = (props) => {
-  const fixed = useContext(AppContext);
+  // const fixed = useContext(AppContext);
 
   return <Wrapper src={props.skill.url} />;
 };
