@@ -17,7 +17,13 @@ const DownloadLink: React.FC<IProps> = (props) => {
   const variant = props.variant || 'black';
 
   return (
-    <Wrapper fixed={fixed} variant={variant} {...props.delegated}>
+    <Wrapper
+      download
+      href="assets/files/resume.pdf"
+      fixed={fixed}
+      variant={variant}
+      {...props.delegated}
+    >
       <Icon fixed={fixed} src={src} variant={variant} />
       {props.children}
     </Wrapper>
@@ -35,6 +41,7 @@ const Wrapper = styled.a`
     font-size: calc(1rem * 24/18);
     gap: 8px;
     transition: filter 200ms;
+    color: inherit;
     
     &:hover{
       cursor: pointer;

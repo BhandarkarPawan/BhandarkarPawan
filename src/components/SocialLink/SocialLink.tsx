@@ -47,7 +47,6 @@ const Icon = styled.img`
     height: 32px;
     width: auto;
     transition: filter 200ms;
-
     filter: ${props.variant === 'white' && 'var(--filter-to-white)'};
 
     &:hover{
