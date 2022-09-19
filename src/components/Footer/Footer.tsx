@@ -30,7 +30,7 @@ const Footer: React.FC<IProps> = (props) => {
           <br />
           Let’s get in touch!
         </Message>
-        <Email fixed={fixed}>
+        <Email href="mailto:pawan@bhandarkar.me" fixed={fixed}>
           <Icon fixed={fixed} src="assets/Mail.svg" />
           pawan@bhandarkar.me
         </Email>
@@ -86,8 +86,7 @@ const Icon = styled.img`
     `
     height: 24px;
     width: auto;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7461%) hue-rotate(208deg) brightness(104%) contrast(99%);
-
+    filter: var(--filter-to-white);
   `}
 `;
 
@@ -108,7 +107,7 @@ const Lead = styled.div`
 
 const Message = styled.p``;
 
-const Email = styled.div`
+const Email = styled.a`
   ${(props: IStyledProps) =>
     props.fixed &&
     `
@@ -117,7 +116,20 @@ const Email = styled.div`
     align-items: center;
     font-size: calc(1rem * 24/18);
     font-weight: 500;
-    
+    align-self: start;
+    color: inherit;
+    text-decoration: none;
+
+    &:visited{
+      color: inherit;
+    }
+
+    transition: filter 200ms;
+
+    &:hover{
+      cursor: pointer;
+      filter: var(--filter-to-black);
+    }
   `}
 `;
 

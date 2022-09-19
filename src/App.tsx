@@ -7,7 +7,6 @@ import Main from './components/Main';
 export const AppContext = createContext(false);
 
 function App() {
-  // const [fixed, setFixed] = useState(true);
   const fixed = true;
 
   return (

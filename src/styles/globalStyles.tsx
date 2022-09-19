@@ -24,14 +24,15 @@ html{
 	--color-primary: hsl(148deg 42% 42%);
 	--color-primary-dark: hsl(148deg 42% 36%);
 	--color-line: hsl(0deg 0% 37%);
-
-	--filter-white: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7461%) hue-rotate(208deg) brightness(104%) contrast(99%);
 	
 	--card-width: 300px;
 	--card-gap: 16px;
 	--max-width: calc((var(--card-width) * 3) + (var(--card-gap) * 4));
 	--global-h-pad: 16px;
 
+	--filter-to-primary: brightness(0) saturate(100%)  invert(45%) sepia(90%) saturate(284%) hue-rotate(95deg) brightness(94%) contrast(84%);
+	--filter-to-white:  brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7461%) hue-rotate(208deg) brightness(104%) contrast(99%);
+	--filter-to-black:  brightness(0) saturate(100%) invert(0%) sepia(93%) saturate(12%) hue-rotate(97deg) brightness(92%) contrast(100%);
 	scroll-behavior: smooth;
 
 	@media(prefers-reduced-motion){

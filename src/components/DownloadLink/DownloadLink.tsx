@@ -17,14 +17,14 @@ const DownloadLink: React.FC<IProps> = (props) => {
   const variant = props.variant || 'black';
 
   return (
-    <Wrapper fixed={fixed} {...props.delegated}>
+    <Wrapper fixed={fixed} variant={variant} {...props.delegated}>
       <Icon fixed={fixed} src={src} variant={variant} />
       {props.children}
     </Wrapper>
   );
 };
 
-const Wrapper = styled.div`
+const Wrapper = styled.a`
   ${(props: IStyledProps) =>
     props.fixed &&
     `
@@ -34,6 +34,16 @@ const Wrapper = styled.div`
     font-weight: 500;
     font-size: calc(1rem * 24/18);
     gap: 8px;
+    transition: filter 200ms;
+    
+    &:hover{
+      cursor: pointer;
+      filter: ${
+        props.variant === 'white'
+          ? 'var(--filter-to-black)'
+          : 'var(--filter-to-primary)'
+      };
+    }
   `}
 `;
 
@@ -44,7 +54,15 @@ const Icon = styled.img`
     height: 25px;
     width: 25px;
 
-    ${props.variant === 'white' && 'filter: var(--filter-white)'}
+    filter: ${props.variant === 'white' && 'var(--filter-to-white)'};
+
+    &:hover{
+      filter: ${
+        props.variant === 'white'
+          ? 'var(--filter-to-black)'
+          : 'var(--filter-to-primary)'
+      };
+    }
   `}
 `;
 export default DownloadLink;

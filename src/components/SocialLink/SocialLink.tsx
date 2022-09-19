@@ -46,11 +46,17 @@ const Icon = styled.img`
     `
     height: 32px;
     width: auto;
+    transition: filter 200ms;
 
-    ${
-      props.variant === 'white' &&
-      'filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7461%) hue-rotate(208deg) brightness(104%) contrast(99%)'
-    };
+    filter: ${props.variant === 'white' && 'var(--filter-to-white)'};
+
+    &:hover{
+      filter: ${
+        props.variant === 'white'
+          ? 'var(--filter-to-blacl)'
+          : 'var(--filter-to-primary)'
+      };
+    }
   `}
 `;
 
