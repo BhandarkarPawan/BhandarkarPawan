@@ -1,4 +1,4 @@
-import { createContext } from 'react';
+import { createContext, useEffect } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -8,6 +8,10 @@ export const AppContext = createContext(false);
 
 function App() {
   const fixed = true;
+
+  useEffect(() => {
+    document.title = 'Pawan Bhandarkar';
+  });
 
   return (
     <AppContext.Provider value={fixed}>

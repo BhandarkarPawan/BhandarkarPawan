@@ -1,6 +1,4 @@
-import { useContext } from 'react';
 import styled from 'styled-components';
-import { AppContext } from '../../App';
 import Project, { IProject } from '../Project/Project';
 
 export interface IStyledProps {
@@ -14,8 +12,8 @@ const PROJECTS: IProject[] = [
   {
     name: 'Kanban',
     imgUrl: 'KanbanProject.png',
-    gitUrl: '',
-    webUrl: ''
+    gitUrl: 'https://github.com/BhandarkarPawan/kanban-task-management',
+    webUrl: 'https://kanbhan.netlify.app'
   },
   {
     name: 'Emergency Social Network',
@@ -26,34 +24,32 @@ const PROJECTS: IProject[] = [
   {
     name: 'E-Learning Landing Page',
     imgUrl: 'SkilledProject.png',
-    gitUrl: '',
-    webUrl: ''
+    gitUrl: 'https://github.com/BhandarkarPawan/skilled-elearning-landing-page',
+    webUrl: 'https://bhandarkar-elearning.netlify.app'
   },
   {
     name: 'Rock Paper Scissors Lizard Spock',
     imgUrl: 'RPSLSProject.png',
-    gitUrl: '',
-    webUrl: ''
+    gitUrl: 'https://github.com/BhandarkarPawan/rock-paper-scissors',
+    webUrl: 'https://bhandarkar-rpsls.netlify.app'
   },
   {
     name: 'Product Preview',
     imgUrl: 'PreviewProject.png',
-    gitUrl: '',
-    webUrl: ''
+    gitUrl: 'https://github.com/BhandarkarPawan/product-preview-card-component',
+    webUrl: 'https://bhandarkarpawan-product-preview-card-component.netlify.app'
   },
   {
     name: 'Splitter',
     imgUrl: 'SplitterProject.png',
-    gitUrl: '',
-    webUrl: ''
+    gitUrl: 'https://github.com/BhandarkarPawan/tip-calculator',
+    webUrl: 'https://tipped.netlify.app'
   }
 ];
 
 const ProjectGrid: React.FC<IProps> = (props) => {
-  const fixed = useContext(AppContext);
-
   return (
-    <Wrapper fixed={fixed}>
+    <Wrapper>
       {PROJECTS.map((project, i) => {
         return (
           <ListItem key={i}>
@@ -69,14 +65,10 @@ const Wrapper = styled.ul`
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  ${(props: IStyledProps) =>
-    props.fixed &&
-    `
-    display: grid;
-    grid-template-columns:
-      repeat(auto-fill, minmax(var(--card-width), 1fr));
-    gap: var(--card-gap);
-  `}
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--card-width), 1fr));
+  gap: var(--card-gap);
 `;
 
 const ListItem = styled.li`

@@ -21,33 +21,32 @@ const Design: React.FC<IProps> = (props) => {
   const fixed = useContext(AppContext);
 
   return (
-    <Wrapper fixed={fixed} {...props.delegated}>
-      <Thumbnail fixed={fixed} src={imgSrc} />
+    <Wrapper href={props.design.designUrl} fixed={fixed} {...props.delegated}>
+      <Thumbnail src={imgSrc} />
     </Wrapper>
   );
 };
 
-const Wrapper = styled.article`
-  ${(props: IStyledProps) =>
-    props.fixed &&
-    `
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-  `};
+const Wrapper = styled.a`
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
 `;
 
 const Thumbnail = styled.img`
-  ${(props: IStyledProps) =>
-    props.fixed &&
-    `
-      width: 100%;
-      height: 100%;
-      border-radius: 8px;
-      line-height: 0px;
-      object-fit: cover;
-  `};
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  line-height: 0px;
+  object-fit: cover;
+
+  transition: transform 200ms;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
 `;
 
 export default Design;

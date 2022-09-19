@@ -1,6 +1,4 @@
-import { useContext } from 'react';
 import styled from 'styled-components';
-import { AppContext } from '../../App';
 import { QUERY } from '../../constants';
 
 export interface IStyledProps {
@@ -16,7 +14,6 @@ export interface IProps {
 }
 
 const NavLink: React.FC<IProps> = (props) => {
-  const fixed = useContext(AppContext);
   const variant = props.variant || 'start';
 
   const scrollToSection = () => {
