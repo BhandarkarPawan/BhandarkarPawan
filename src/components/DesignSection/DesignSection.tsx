@@ -18,7 +18,7 @@ const DesignSection: React.FC<IProps> = (props) => {
   const fixed = useContext(AppContext);
 
   return (
-    <Wrapper fixed={fixed} {...props.delegated}>
+    <Wrapper id="designs" fixed={fixed} {...props.delegated}>
       <Heading>Designs</Heading>
       <DesignGrid />
     </Wrapper>

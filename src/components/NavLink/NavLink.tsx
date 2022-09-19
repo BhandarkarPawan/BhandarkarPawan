@@ -9,6 +9,7 @@ export interface IStyledProps {
 }
 
 export interface IProps {
+  refId: String;
   children?: React.ReactNode;
   delegated?: any;
   variant?: String;
@@ -18,14 +19,24 @@ const NavLink: React.FC<IProps> = (props) => {
   const fixed = useContext(AppContext);
   const variant = props.variant || 'start';
 
+  const scrollToSection = () => {
+    const section = document.getElementById(`${props.refId}`);
+    section?.scrollIntoView();
+  };
+
   return (
-    <Wrapper fixed={fixed} variant={variant} {...props.delegated}>
+    <Wrapper
+      fixed={fixed}
+      variant={variant}
+      {...props.delegated}
+      onClick={scrollToSection}
+    >
       {props.children}
     </Wrapper>
   );
 };
 
-const Wrapper = styled.a`
+const Wrapper = styled.button`
   ${(props: IStyledProps) =>
     props.fixed &&
     `

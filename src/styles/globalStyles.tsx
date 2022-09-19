@@ -31,6 +31,12 @@ html{
 	--card-gap: 16px;
 	--max-width: calc((var(--card-width) * 3) + (var(--card-gap) * 4));
 	--global-h-pad: 16px;
+
+	scroll-behavior: smooth;
+
+	@media(prefers-reduced-motion){
+		scroll-behavior: auto;
+	}
 }
 `;
 

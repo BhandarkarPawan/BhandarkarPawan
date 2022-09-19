@@ -19,7 +19,7 @@ const Footer: React.FC<IProps> = (props) => {
   const fixed = useContext(AppContext);
 
   return (
-    <Wrapper fixed={fixed} {...props.delegated}>
+    <Wrapper id="contact" fixed={fixed} {...props.delegated}>
       <MainFooter fixed={fixed}>
         <Lead fixed={fixed}>
           <Heading>Contact</Heading>

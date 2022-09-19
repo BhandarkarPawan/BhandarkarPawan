@@ -17,7 +17,7 @@ const EducationSection: React.FC<IProps> = (props) => {
   const fixed = useContext(AppContext);
 
   return (
-    <Wrapper fixed={fixed} {...props.delegated}>
+    <Wrapper id="about" fixed={fixed} {...props.delegated}>
       <Heading>Education</Heading>
       <EducationList />
     </Wrapper>
