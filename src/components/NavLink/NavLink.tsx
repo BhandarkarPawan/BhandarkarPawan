@@ -26,15 +26,8 @@ const NavLink: React.FC<IProps> = (props) => {
 
   console.log(variant);
   return (
-    <Wrapper
-      fixed={fixed}
-      variant={variant}
-      {...props.delegated}
-      onClick={scrollToSection}
-    >
-      <Name variant={variant} fixed={fixed}>
-        {props.children}
-      </Name>
+    <Wrapper variant={variant} onClick={scrollToSection}>
+      <Name>{props.children}</Name>
     </Wrapper>
   );
 };
@@ -42,6 +35,8 @@ const NavLink: React.FC<IProps> = (props) => {
 const Wrapper = styled.button`
   padding-top: 8px;
   padding-bottom: 8px;
+  --border-color: ${(props: IStyledProps) =>
+    props.variant === 'start' ? 'white' : 'var(--color-primary)'};
 
   &:hover {
     cursor: pointer;
@@ -50,31 +45,27 @@ const Wrapper = styled.button`
   @media ${QUERY.phoneAndDown} {
     display: ${(props: IStyledProps) =>
       props.variant === 'start' ? 'none' : 'flex'};
+
+    justify-content: center;
   }
 `;
 
 const Name = styled.div`
-  ${(props: IStyledProps) =>
-    props.fixed &&
-    `
-      text-transform: lowercase;
-      font-size: calc(1rem * 24 / 18);
-      padding-bottom: 4px; 
-      margin-bottom: -8px;
-      border-bottom: 4px solid transparent;
-      transition: transform 200ms ease; 
-      
-      ${Wrapper}:hover &{
-        border-color: var(--color-primary);
-        transform: translateY(-10px);
-      }
+  text-transform: lowercase;
+  font-size: calc(1rem * 24 / 18);
+  padding-bottom: 4px;
+  margin-bottom: -8px;
+  transition: transform 200ms ease;
 
-      @media ${QUERY.phoneAndDown}{
-        padding: 16px 0px;
-        justify-content: center;
-        align-items: center;
-    }
-  `}
+  ${Wrapper}:hover & {
+    border-bottom: 4px solid var(--border-color);
+    transform: translateY(-10px);
+  }
+
+  @media ${QUERY.phoneAndDown} {
+    padding: 16px 0px;
+    justify-content: center;
+  }
 `;
 
 export default NavLink;

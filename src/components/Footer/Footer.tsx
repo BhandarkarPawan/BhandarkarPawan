@@ -23,7 +23,7 @@ const Footer: React.FC<IProps> = (props) => {
       <MainFooter fixed={fixed}>
         <Lead fixed={fixed}>
           <Heading>Contact</Heading>
-          <Navbar />
+          <Navbar variant="start" />
         </Lead>
         <Message>
           Interested in working together?
