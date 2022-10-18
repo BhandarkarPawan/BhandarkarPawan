@@ -14,10 +14,10 @@ const DESIGNS: IDesign[] = [
   {
     name: 'Emergency Social Network',
     imgUrl: 'ESNDesign.png',
-    designUrl:
-      'https://www.figma.com/file/ZH2Wlz0W6hXuJEuEZHUxBc/FSE-SB2?node-id=0%3A1',
-    prototypeUrl:
-      'https://www.figma.com/proto/ZH2Wlz0W6hXuJEuEZHUxBc/FSE-SB2?page-id=0%3A1&node-id=5%3A433&starting-point-node-id=5%3A433'
+    designUrl: '',
+    // 'https://www.figma.com/file/ZH2Wlz0W6hXuJEuEZHUxBc/FSE-SB2?node-id=0%3A1',
+    prototypeUrl: ''
+    // 'https://www.figma.com/proto/ZH2Wlz0W6hXuJEuEZHUxBc/FSE-SB2?page-id=0%3A1&node-id=5%3A433&starting-point-node-id=5%3A433'
   },
   {
     name: 'Refriendo',
