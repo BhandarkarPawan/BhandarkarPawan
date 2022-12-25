@@ -86,12 +86,12 @@
         \hspace{-2pt} $\vert$ \hspace{-2pt} \small{\textit{#2}} 
         & 
         \textit{#3} \\
-    \end{tabular*}\vspace{0pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand*{\skill}[2]{
   \textbf{#1} : #2 \\
-  \vspace{1pt}
+  \vspace{2pt}
 }
 
 
@@ -118,6 +118,12 @@
 \end{tabular*}
 
 
+%-----------SUMMARY-----------------
+\shortSection {Summary}
+\small Full-stack engineer experienced (2+ years) in building \textbf{responsive}, \textbf{accessible} web applications. I write \textbf{clean, modular}, and \textbf{well- tested} code that is easy for teams to \textbf{understand, extend}, and \textbf{integrate}. Seeking software engineering internship for Summer'23
+
+
+
 %-----------EDUCATION-----------------
 \shortSection{Education}
 \educationHeading
@@ -125,8 +131,7 @@
 {Master of Science in Software Engineering; GPA: 4.0/4.0 }{Aug 2022 - Dec 2023}{
   Foundations of Software Engineering,
   Software Verification \& Testing,
-  Software Requirements \& Interaction Design
-  Human-Computer Interaction \& User Experience
+  Software Requirements \& Interaction Design,
 }
 
 \vspace{5pt}
@@ -134,7 +139,7 @@
 \educationHeading
 {NMAM Institute of Technology }{Nitte, India}
 {Bachelor of Computer Science;  GPA: 9.8/10 (top 1\%, Class of 2020) }{Jul 2016 - Apr 2020}{
-  Data Structures and Algorithms,
+  Data Structures \& Algorithms,
   Object Oriented Modelling \& Design,
   Linear Algebra \& Probability Theory
 }
@@ -143,8 +148,8 @@
 %-------- SKILLS------------
 \shortSection{Skills}
 \skill {Languages}{Typescript, JavaScript, Python, SQL, HTML, CSS, GraphQL}
-\skill {Libraries \& Frameworks}{React, NodeJS, NextJS, Redux, MongoDB, PostgreSQL, MySQL, Express, Flask, Sass}
-\skill {Tools}{Figma, Docker, AWS, S3, Postman, VSCode}
+\skill {Libraries \& Frameworks}{React, NodeJS, NextJS, Express, Redux, MongoDB, PostgreSQL, Flask, Bootstrap, TailwindCSS}
+\skill {Tools }{Figma, Docker, AWS, S3, Postman, VSCode, Git, Miro, Jama}
 
 
 %-----------EXPERIENCE-----------------
@@ -152,7 +157,7 @@
 \resumeSubheading
 {Team AIBOD Inc.}{Fukuoka City, Japan}
 {Software Engineer 2}{Nov 2021 - Apr 2022}
-\vspace{0pt}
+\vspace{2pt}
 \resumeItemListStart
 \resumeItemWithoutTitle{Developed \textbf{50+ UI components} with \textbf{React and TypeScript} resulting in a 10\% ($\sim$ 1.2M) increase in annual revenue.}
 \resumeItemWithoutTitle{Created a \textbf{RESTful} payment server with a \textbf{microservice architecture} using \textbf{Python, Flask, and PostgreSQL}, expanding the customer base ($\sim$ ¥500K/year) to include BioPay users.}
@@ -166,9 +171,9 @@
 {Software Engineer 1}{Jul 2020 - Oct 2021}
 \vspace{0pt}
 \resumeItemListStart
-\resumeItemWithoutTitle{Improved data pre-processing rate by 10x (from 20/h to 200/h) by \textbf{building internal tools with Python} for annotating and visualizing images.}
+\resumeItemWithoutTitle{Improved data pre-processing rate by 10x (from 20/h to 200/h) by \textbf{building image annotation tools with Python.} }
 \resumeItemWithoutTitle{Designed and implemented a \textbf{GraphQL search system} with Apollo and Ariadne, streamlining 3 ongoing projects.}
-\resumeItemWithoutTitle{Improved team efficiency and reliability with over 80\% code coverage through \textbf{unit and integration testing} with \textbf{Typescript, Jest, and Supertest.}}
+\resumeItemWithoutTitle{Improved team efficiency and reliability with over 80\% code coverage through \textbf{unit and integration testing} with \textbf{Jest.}}
 \resumeItemListEnd
 
 \vspace{2pt}
@@ -176,7 +181,7 @@
 {AI Engineer Intern}{Feb 2020 - Jun 2020}
 \vspace{0pt}
 \resumeItemListStart
-\resumeItemWithoutTitle{Fixed 20+ bugs in the API server with \textbf{NodeJS and Typescript} and contributed to ongoing full-stack applications.}
+\resumeItemWithoutTitle{Fixed \textbf{20+ bugs} in the API server with \textbf{NodeJS and Typescript} and contributed to ongoing full-stack applications.}
 \resumeItemWithoutTitle{Improved the accuracy of a \textbf{KNN-supervised classifier} from 80\% to 87\% through \textbf{feature engineering.}}
 \resumeItemWithoutTitle{\textbf{Trained and evaluated} BERT NLP algorithm using \textbf{PyTorch} for Named Entity Recognition and integrated the AI backend and \textbf{Express API Server} to provide AI as a Service.}
 \resumeItemListEnd
@@ -184,19 +189,27 @@
 %-----------PROJECTS-----------------
 \shortSection{Projects}
 \projectHeading {Kanban Task Manager}{React, TypeScript, Styled-Components, Figma, Git}{Jun 2022 - Present}
-Developed a highly \textbf{accessible} Kanban Task Manager with \textbf{pixel-perfect} implementation and best practices in \textbf{A11y, Semantic HTML, and ARIA labels}, which ensured usability with screen readers such as Apple Voice Over.
+\resumeItemListStart
+\resumeItemWithoutTitle{Developed a highly \textbf{accessible} Kanban Task Manager with \textbf{pixel-perfect} implementation and best practices in \textbf{A11y, Semantic HTML, and ARIA labels}, which ensured usability with screen readers such as Apple Voice Over. Also generated clear API documentation with \textbf{API Blueprint} and \textbf{Postman}.}
+\resumeItemListEnd
 
-\vspace{6pt}
+\vspace{4pt}
 \projectHeading {Emergency Social Network}{HTML, CSS, Javascript, MongoDB}{Aug 2022 - Dec 2022}
-Implemented a \textbf{robust system architecture}, applying SCRUM and Kanban agile practices to develop the app with a focus on usability. Applied OOA to lead development efforts and built a highly \textbf{maintainable, test-driven application} using \textbf{JSON-based RESTful APIs}.
+\resumeItemListStart
+\resumeItemWithoutTitle{Implemented a \textbf{robust system architecture}, applying SCRUM and Kanban agile practices to develop the app with a focus on usability. Applied \textbf{Object-Oriented Analysis \& Design} to lead development efforts and built a highly \textbf{maintainable, test-driven application} that provides \textbf{JSON-based RESTful APIs} for the frontend as well as headless clients}
+\resumeItemListEnd
 
-\vspace{6pt}
+\vspace{4pt}
 \projectHeading {Re:Use}{Figma, Jama, Miro}{Aug 2022 - Dec 2022}
-Collaborated in a team of 6, to ideate a solution for problems faced by customers and volunteers in the donation industry by conducting \textbf{user research/interviews}, generating \textbf{storyboards} with Miro, \textbf{style guides} with Figma and a \textbf{Minimum-Viable-Product} (MVP) using React, Typescript and Styled-Components.
+\resumeItemListStart
+\resumeItemWithoutTitle{Collaborated in a team of 6, to ideate a solution for problems faced by customers and volunteers in the donation industry by conducting \textbf{user research/interviews}, generating \textbf{storyboards} with Miro, \textbf{style guides} with Figma and a \textbf{Minimum-Viable-Product} (MVP) using React, Typescript and Styled-Components.}
+\resumeItemListEnd
 
-\vspace{6pt}
+\vspace{4pt}
 \projectHeading {Refriendo}{TypeScript, React, CSS, Figma, Git}{Oct 2021 - Jul 2022}
-Generated a \textbf{high-fidelity prototype} with a clean, visual design aesthetic and conducted \textbf{think-aloud usability testing} surveys to iteratively improve the design, followed by a pixel-perfect implementation of the mockups using modern CSS techniques.
+\resumeItemListStart
+\resumeItemWithoutTitle{Generated a \textbf{high-fidelity prototype} with a clean, visual design aesthetic and conducted \textbf{think-aloud usability testing} surveys to iteratively improve the design, followed by implementation of the mockups using a \textbf{Client-Server Architecture} and modern patterns such as \textbf{React Hooks} and \textbf{Context API}.}
+\resumeItemListEnd
 
 %-------- AWARDS------------
 \shortSection{Awards \& Leadership}
@@ -207,6 +220,3 @@ Generated a \textbf{high-fidelity prototype} with a clean, visual design aesthet
 \end{document}
 
 
-%-----------SUMMARY-----------------
-\shortSection {Summary}
-\small Experienced (2+ years) in building responsive, \textbf{accessible} full-stack web applications

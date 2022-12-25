@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2022.12.24)  24 DEC 2022 15:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2022.12.24)  24 DEC 2022 19:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -253,9 +253,9 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 (Font)              using `OT1/cmr/bx/n' instead on input line 122.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 140.
+(Font)              <9> on input line 135.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 140.
+(Font)              <6> on input line 135.
 [1
 
 {/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Resume.aux)
@@ -263,21 +263,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Resume.out' has not changed.
-(rerunfilecheck)             Checksum: E0B4D5C8AAEF464BE8AB335AF1A050C6;484.
+(rerunfilecheck)             Checksum: 4B7EBC13F8DF9FA51BFE980C8A2AF115;562.
  ) 
 Here is how much of TeX's memory you used:
  9174 strings out of 480228
- 143030 string characters out of 5895605
- 458799 words of memory out of 5000000
+ 143029 string characters out of 5895605
+ 462800 words of memory out of 5000000
  27027 multiletter control sequences out of 15000+600000
- 475132 words of font info for 50 fonts, out of 8000000 for 9000
+ 474786 words of font info for 49 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,11n,63p,446b,327s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy9.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb></opt/local/share/texmf-texlive/fonts/type1/public/cm-super/sfrm0900.pfb>
-Output written on Resume.pdf (1 page, 140181 bytes).
+ 60i,11n,63p,510b,327s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy9.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb></opt/local/share/texmf-texlive/fonts/type1/public/cm-super/sfrm0900.pfb>
+Output written on Resume.pdf (1 page, 128718 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 85 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
