@@ -35,11 +35,9 @@ I'm a developer currently pursuing a Master's Degree in Software Engineering at 
 	<img alt="Postman" src="https://img.shields.io/badge/Postman-D14836?style=for-the-badge&logo=postman&logoColor=white&color=ef5b25" />
 	<img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 	<img alt="Postgres" src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-	<img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
+
 </p>
 
-| <img src="https://github-readme-stats.vercel.app/api?username=BhandarkarPawan&show_icons=true&theme=react" alt="github stats" /> | <img src="https://github-readme-streak-stats.herokuapp.com/?user=BhandarkarPawan&theme=react" />
-| --- | --- | 
 
 ## Get In Touch
 <p>
